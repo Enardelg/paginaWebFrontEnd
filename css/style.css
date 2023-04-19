@@ -1,0 +1,787 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* Body*/
+body{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+html {
+    font-size: 62.5%; /* 1rem => 10px*/
+}
+:root{
+    --color-primario: #f25f3a;
+    --color-secundario: #1d1e25;
+    --color-terciario: #8f94a7;
+    --color-cuaternario:#232C50;
+    --color-quinto:#ffefea;
+    --color-sexto:#f9f9f9;
+    --color-septimo:#FAFAFA;
+    --width-general: 37.5rem;
+    --with-cuerpo: 35rem;
+    --with-generaldesk: 98.5vw;
+    --with-cuerpodesk: 93vw;
+}
+.centrado{
+    margin: 0 1.35rem;
+}
+/*Header*/
+.header{
+    display: flex;
+    justify-content: space-around;
+    width:var(--with-cuerpo);
+    align-items: center;
+}
+.header__logo{
+    align-self: center;
+    height:30vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.header__logo::before{
+    content:url(../images/logoPuntos.png);
+    align-self: center;
+}
+.header__logo:hover{
+    transform:translate(3rem,0);
+    transition: 1.5s;
+}
+.hamburger--hidden{
+    display: block;
+    height: 2.4rem;
+}
+.nav--hidden{
+    display:none;
+} 
+.boton--hidden{
+    display: none;
+}
+/*Banner*/    
+.estadisticas{
+    width: var(--with-cuerpo);
+    height: 70vh;
+    text-align: center;
+}
+.estadisticas__img{
+    width:var(--with-cuerpo);
+    height: auto;
+}
+
+/* 1ra seccón*/
+.primerTramo{
+    width: var(--width-cuerpo)
+}
+.primerTramo__titular{
+    color: var(--color-cuaternario);
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 4.5rem;
+    text-align: center;
+}
+.primerTramo__info{
+    color: var(--color-terciario);
+    font-size: 2rem;
+    line-height: 3rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+.get__boton{
+    align-items: center;
+    background-color: var(--color-primario);
+    border-radius: 5rem;
+    box-shadow: 0 4px 8px rgba(242, 97, 59, 0.5);
+    color: var(--color-sexto);
+    display: flex;
+    justify-content: center;
+    height: 4.5rem;
+    margin: auto;
+    margin-top: 3rem;
+    width: 13rem;
+    text-decoration: none;
+    margin-top: 4rem;
+}  
+.get__boton:hover{
+    background-color: #e6300b;
+    color: #2c0404;
+    font-weight: 500;
+    box-shadow:0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.60)
+}
+/* Fin de la 1ra sección*/
+
+/* 2da sección*/
+.primerContainer{
+    margin-top: 4rem;
+}
+.segundo-Tramo {
+    width: var(--width-cuerpo);
+}
+.segundoTramo__titular{
+    color: var(--color-cuaternario);
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 9rem;
+}
+.segundoTramo__info{
+    margin-top: 2rem;
+    width: var(--with-cuerpo);
+    height: 10.4rem;
+    font-size: 1.6rem;
+    color: var(--color-terciario);
+    line-height: 2.6rem;
+    text-align: center;
+}
+/* Fin de 2da sección*/
+
+/* 3ra sección*/
+.tercerTramo{
+    margin-top: 5rem;
+    width: var(--width-cuerpo)
+}
+.tercerTramo .unir{
+    display:flex;
+    width: var(--width-cuerpo);
+    position:relative;
+}
+.unir__boton{
+    align-items: center;
+    background-color: var(--color-primario);
+    border-radius: 3rem;
+    color: var(--color-quinto);
+    display: flex;
+    height: 3.5rem;
+    font-size: 1.6rem;
+    justify-content: center;
+    position: relative;
+    left: 1.5rem;
+    width: 9rem;
+    text-decoration: none;
+}
+.unir__boton:hover{
+    background-color: #e6300b;
+    color: #2c0404;
+    font-weight: 500;
+    box-shadow:0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.60);
+    transform:scale(1.5);
+}
+.unir__barra{
+    align-items: center;
+    display: flex;
+    background-color:var(--color-quinto);
+    color:var(--color-cuaternario);
+    width: 30rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    height: 3.5rem;
+    padding-left: 2.5rem;
+}
+.tercerTramo__text{
+    color: var(--color-terciario);
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-bottom: 1rem;
+    padding: 1.2rem;
+}
+.titulo__perfil{
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 6.2rem;
+    color: var(--color-cuaternario);
+    text-align: center;
+    margin-top: 7rem;
+}
+/* Fin de 3ra sección*/
+/* 4ta sección*/
+.cuartoTramo{
+    margin-top: 4rem;
+    position:relative;
+    display: flex;
+}
+.naisha--hidden{
+    display: none;
+}
+.richard--hidden{
+    display:none;
+}
+.ali{
+    position: relative;
+    margin-top: 4rem;
+}
+.perfil{
+    border-radius: 50vh;
+    box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.507);
+    height: 7rem;
+    left: 14rem;
+    position: absolute;
+    width: 7rem;
+    top: -1rem;
+}
+.perfil:hover{
+    transform: rotate(180deg);
+    transition: 10s;
+}
+.ali .titular{ 
+    color: var(--color-cuaternario);
+    font-size: 2rem;
+    text-align: center;
+    width: var(--width-cuerpo);
+    position:relative;
+    top:8rem;
+}
+.info{
+    background-color:var(--color-sexto);
+    width: 34rem;
+    height: 27rem;
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    color: var(--color-terciario);
+    padding-top: 8rem;
+}
+/* Fin de la 4ta sección*/
+/* 5ta sección*/
+.quintoTramo{
+    width: var(--width-general);
+    background-color:var(--color-primario);
+    color: var(--color-sexto);
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+}
+.quintoTramo__titular{
+    font-size: 3rem;
+    text-align: center;
+    padding: 7rem 2rem;
+}
+.quintoTramo__titular:hover{
+    color: #000000;
+}
+.quintoTramo__get{
+    align-items: center;
+    background-color: var(--color-quinto);
+    border-radius: 5rem;
+    box-shadow: 0 4px 8px rgba(17, 17, 17, 0.315);
+    color: var(--color-primario);
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: 700;
+    height: 4.4rem;
+    justify-content: center;
+    width: 13rem;
+    text-decoration: none;
+}
+.quintoTramo__get:hover{
+    background-color: black;
+    color: #e6300b;
+    font-weight: 500;
+    box-shadow:0.2rem 0.2rem 0.5rem rgba(77, 19, 3, 0.998)
+}
+/* Fin de la 5ta sección*/
+/* Footer*/
+footer{
+    background-color: var(--color-secundario);
+    height: 49rem;
+    width: var(--width-general);
+}
+.bg--hidden{
+    display: flex;
+    padding: 5rem 0;
+    gap: 1.5rem;
+}
+.bg__barra{
+    align-items: center;
+    align-self: center;
+    background-color: var(--color-sexto);
+    border-radius: 5rem;
+    color: var(--color-terciario);
+    display: flex;
+    height: 4.4rem;
+    padding-left: 1rem;
+    margin-left: 2rem;
+    width: 24rem;
+}
+.bg__go{
+    color: var(--color-sexto);
+    align-items: center;
+    align-self: center;
+    background-color: var(--color-primario);
+    border-radius: 5rem;
+    display: flex;
+    height: 4.2rem;
+    flex-direction: column;
+    justify-content: center;
+    width: 8rem;
+    text-decoration: none;
+}
+.form--hidden{
+    display:none;
+}
+.navFooter{
+    display: flex;
+    height: 13rem;
+    justify-content: space-between;
+    margin-top: 1rem;
+    width: 37.5rem;
+}
+.navFooter__columna{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    gap: 1.6rem;
+    margin-left: 4rem;
+    width: 50%;
+    list-style: none;
+}
+.navFooter__columna a{
+    text-decoration: none;
+    color: var(--color-septimo);
+}
+.redSocial{
+    margin-top: 3rem;
+}
+.redesSociales{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+.redesSociales a{
+    text-decoration: none;
+    color: var(--color-sexto);
+    display: inline-block;
+}
+.redesSociales:hover{
+    transform:scale(1.5);
+}
+.logoFooter{
+    margin: 4rem 0;
+    display: flex;
+    width: var(--width-general);
+    justify-content: center;
+    gap: 1rem;
+}
+.logoFooter::before{
+    content: url(../images/logoPuntos.png);
+}
+.textFinal{
+    color: var(--color-quinto);
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    font-size: 1rem;
+    text-decoration: center;
+    padding:0 1rem;
+}
+.textFinal:hover{
+    color: var(--color-primario);
+}
+/* Fin del footer*/
+
+@media screen and (min-width: 100vw){
+    .centrado{
+        margin: 0 5rem;
+    }
+    .header{
+        display: flex;
+        justify-content: space-around;
+        width: var(--with-cuerpodesk);
+        align-items: center;
+    }
+    .header__logo{
+        height:30vh;
+        width: 30%;
+        margin-left: 10rem;
+    }
+    .header__logo::before{
+        content:url(../images/logoPuntos.png);
+        align-self: center;
+    }
+    
+    .hamburger--hidden{
+        display: none;
+    }
+    .boton--hidden{
+        display:block
+    }
+    .navHeader{
+        width: 70%;
+        display: flex;
+        align-self: center;
+    } 
+    .navHeader ul {
+        list-style: none;
+        display: flex;
+    }
+    .nav__items{
+        padding: 2rem;
+        align-self: center;
+    }
+
+    .nav__link{
+        text-decoration: none;
+        color: var(--color-cuaternario);
+        font-size: 3 rem;
+        font-weight: 500;
+    }
+    .nav__items:hover{
+        transform: skew(5deg, 5deg);
+        transition: 0.5s;
+    }
+    .get__boton{
+        margin-top: 0.5rem;
+    }
+    /*Banner*/
+    .home{
+        display: flex;
+        margin: 0 5rem;
+        gap: 3rem;
+    }    
+    .estadisticas{
+        width: 50%;
+        height: 50vh;
+        text-align: center;
+        order: 1;
+    }
+    .estadisticas__img{
+        width: 100%;
+        height:auto;
+    }
+    .primerTramo{
+        width: 50%;
+        margin-top: 10rem;
+    }
+    .primerTramo__titular{
+        font-weight: 700;
+        font-size: 5.1rem;
+        line-height: 5.4rem;
+        width: 43.9rem;
+        height: 17.8rem;
+        text-align: left;
+    }
+    .primerTramo__info{
+        text-align: left;
+        color: #000000;
+        font-size: 1.7rem;
+        font-weight: 500;
+        line-height: 2.6rem;
+        width: 35rem;
+        height: 7.1rem;
+        margin-bottom: 2rem;
+    }
+    .get{
+        margin-left: -17rem;
+        width: 100%;
+    }
+    .primerContainer{
+        display: flex;
+        padding: 1rem 5rem;
+        gap: 20rem;
+        width: var(--with-cuerpodesk);
+    }
+    .segundoTramo {
+        width: 30%;
+    }
+    .segundoTramo__titular{
+        color: var(--color-cuaternario);
+        width: 43rem;
+        height: 8.8rem;
+        font-size: 3.6rem;
+        font-weight: 700;
+        text-align: left;
+    }
+    .segundoTramo__info{
+        color: #000000;
+        text-align:left;
+        font-size: 1.7rem;
+        font-weight: 500;
+        line-height: 2.6rem;
+        width: 35rem;
+        height: 7.1rem;
+    }
+    /* Fin de 2da sección*/
+    /* 3ra sección*/
+    .tercerTramo{
+        width: 70%;
+        margin-top: 5rem;
+    }
+    .tercerTramo .unir{
+        display:flex;
+        width: var(--width-cuerpo);
+        position:relative;
+    }
+    .unir__boton{
+        align-items: center;
+        background-color: var(--color-primario);
+        border-radius: 3rem;
+        color: var(--color-quinto);
+        display: flex;
+        height: 3.5rem;
+        font-size: 1.6rem;
+        justify-content: center;
+        position: relative;
+        left: 1.5rem;
+        width: 5rem;
+        text-decoration: none;
+    }
+    .unir__barra{
+        align-items: center;
+        display: flex;
+        color:var(--color-cuaternario);
+        background-color: white;
+        width: 30rem;
+        font-size: 1.6rem;
+        font-weight: 700;
+        height: 3.5rem;
+        padding-left: 2.5rem;
+        margin-left: 1.5rem;
+    }
+    .tercerTramo__text{
+        color: var(--color-terciario);
+        font-size: 1.7rem;
+        line-height: 3rem;
+        margin-bottom: 1rem;
+        padding: 1.2rem;
+        margin-left: 8rem;
+    }
+    .titulo__perfil{
+        font-weight: 700;
+        font-size: 3rem;
+        line-height: 6.2rem;
+        color: var(--color-cuaternario);
+        text-align: center;
+        margin-top: 3rem;
+    }
+    .cuartoTramo{
+        display: flex;
+        width: var(--with-cuerpodesk);
+        justify-content: space-around;
+        margin-bottom: 5rem;
+    }
+    .naisha{
+        display: block;
+        position: relative;
+        margin-top: 4rem;
+    }
+    .perfil{
+        border-radius: 50vh;
+        box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.507);
+        height: 7rem;
+        left: 14rem;
+        position: absolute;
+        width: 7rem;
+        top: -1rem;
+    }
+    .naisha .titular{ 
+        color: var(--color-cuaternario);
+        font-size: 2rem;
+        text-align: center;
+        width: var(--width-cuerpo);
+        position:relative;
+        top:8rem;
+    }
+    .cuartoTramo:hover{
+        transform: scale(1.1);
+        transition: 4s;
+    }
+    .info{
+        background-color:var(--color-sexto);
+        width: 34rem;
+        height: 27rem;
+        display: flex;
+        align-items: center;
+        padding: 1.5rem;
+        font-size: 1.6rem;
+        line-height: 3rem;
+        color: var(--color-terciario);
+        padding-top: 8rem;
+    }
+    .richard{
+        display: block;
+        position: relative;
+        margin-top: 4rem;
+    }
+    .perfil{
+        border-radius: 50vh;
+        box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.507);
+        height: 7rem;
+        left: 14rem;
+        position: absolute;
+        width: 7rem;
+        top: -1rem;
+    }
+    .richard .titular{ 
+        color: var(--color-cuaternario);
+        font-size: 2rem;
+        text-align: center;
+        width: var(--width-cuerpo);
+        position:relative;
+        top:8rem;
+    }
+    .info{
+        background-color:var(--color-sexto);
+        width: 34rem;
+        height: 27rem;
+        display: flex;
+        align-items: center;
+        padding: 1.5rem;
+        font-size: 1.6rem;
+        line-height: 3rem;
+        color: var(--color-terciario);
+        padding-top: 8rem;
+    }
+    .quintoTramo{
+        margin-top: 6rem;
+        width: var(--with-generaldesk);
+        display: flex;
+        flex-direction: row;
+        height: 20rem;
+        justify-content: space-around;
+    }
+    .quintoTramo__titular{
+        font-size: 3rem;
+        width: 40rem;
+        margin-left: -11rem;
+        text-align: left;
+    }
+    .quintoTramo__get{
+        border-radius: 5rem;
+        background-color: var(--color-quinto);
+        box-shadow: 0 4px 8px rgba(17, 17, 17, 0.315);
+        color: var(--color-primario);
+        display: flex;
+        font-size: 1.5rem;
+        font-weight: 700;
+        height: 4.4rem;
+        justify-content: center;
+        width: 13rem;
+        text-decoration: none;
+    }
+    footer{
+        background-color: var(--color-secundario);
+        height: 20rem;
+        width: var(--with-generaldesk);
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .bg--hidden{
+        display: none;
+    }
+    .form{
+        order:3;
+        height: 25%;
+        width: 33.3%;
+        display:flex;
+        gap: 2rem;
+        order: 2;
+        margin-top: 5rem;
+    }
+    .form input{
+        align-items: center;
+        align-self: center;
+        background-color: var(--color-sexto);
+        border-radius: 5rem;
+        color: var(--color-terciario);
+        display: flex;
+        height: 4.4rem;
+        padding-left: 1rem;
+        margin-left: 2rem;
+        width: 24rem;
+        outline: 0;
+    }
+    input:focus{
+        background-color: var(--color-primario)
+    }
+    ::placeholder{
+        color: var(--color-secundario);
+        font-weight: 700;
+    }
+    .form button{
+        color: var(--color-sexto);
+        align-items: center;
+        align-self: center;
+        background-color: var(--color-primario);
+        border-radius: 5rem;
+        display: flex;
+        height: 4.2rem;
+        flex-direction: column;
+        justify-content: center;
+        width: 8rem;
+        text-decoration: none;
+    }
+    .navFooter{
+        display: flex;
+        height: 14rem;
+        justify-content: space-between;
+        width: 37.5rem;
+        order: 1;
+        width: 33.3%;
+        order: 1;
+        padding: 1rem 1rem;
+    }
+    .navFooter__link:hover{
+        color: var(--color-primario);
+        font-size: 500;
+    }
+
+    .redSocial{
+        width: 33.3%;
+        height: 10%;
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 12rem;
+        align-items: center;
+    }
+    .redesSociales{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 3.5rem;
+    }
+    
+    .redesSociales a{
+        text-decoration: none;
+        color: var(--color-sexto);
+        display: inline-block;
+    }
+    .social-icons__link:hover{
+        color: var(--color-primario);
+        transform: scale(1);
+    }
+    .logoFooter{
+        display: flex;
+        width: 15rem;
+        height: 2.5rem;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .logoFooter img{
+        width: 100%;
+    }
+    
+    .logoFooter::before{
+        content: url(../images/logoPuntos.png);
+    }
+    .logoFooter:hover{
+        transform:translate(3rem,0);
+        transition: 1.5s;
+    }
+    .final{
+        order: 3;
+    }
+    .textFinal{
+        width: var(--with-generaldesk);
+        padding-left: 6rem;
+    }
+}
+    /* Fin del footer*/
